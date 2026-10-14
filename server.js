@@ -149,4 +149,7 @@ app.get("/api/qr", async (req, res) => {
   } catch { res.status(500).json({ error: "Impossible de générer ce QR code." }); }
 });
 
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "index.html"));
+});
 app.listen(PORT, () => console.log(`OPÉRATION COPENHAGUE disponible sur http://localhost:${PORT}`));
