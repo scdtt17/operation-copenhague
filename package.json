@@ -1,0 +1,12 @@
+{
+  "name": "operation-copenhague",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site de jeu OPÉRATION COPENHAGUE avec panneau admin et sessions limitées",
+  "scripts": { "start": "node server.js" },
+  "dependencies": {
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "qrcode": "^1.5.4"
+  }
+}

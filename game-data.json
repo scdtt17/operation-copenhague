@@ -1,0 +1,192 @@
+{
+  "title": "OPÉRATION COPENHAGUE",
+  "subtitle": "Mission confidentielle — POP",
+  "durationMinutes": 60,
+  "intro": "Agent, le Fantôme a disparu. Retrouvez les indices, recoupez les preuves et rejoignez le point final avant la fin du compte à rebours.",
+  "theme": {
+    "primary": "#c8102e",
+    "background": "#FFF8F8",
+    "text": "#24191B"
+  },
+  "routes": {
+    "alpha": {
+      "name": "POP ALPHA",
+      "intro": "Votre équipe récupère la première partie du dossier. Chaque preuve vous rapproche du dernier signal du Fantôme.",
+      "missions": [
+        {
+          "id": "A1",
+          "title": "Briefing confidentiel",
+          "text": "Lisez le message remis par l'animateur et déchiffrez le nom de code de l'agent disparu.",
+          "location": "Point de départ à définir",
+          "photo": "",
+          "mapsUrl": "",
+          "answer": "fantome|le fantôme",
+          "hint": "Le nom évoque quelqu'un qu'on ne voit pas."
+        },
+        {
+          "id": "A2",
+          "title": "Le détail architectural",
+          "text": "Repérez sur place un détail d'architecture décrit par l'animateur. Prenez une photo de toute l'équipe devant ce détail.",
+          "location": "Lieu à définir",
+          "photo": "",
+          "mapsUrl": "",
+          "answer": "",
+          "hint": "Observez les façades, les portes et les décorations."
+        },
+        {
+          "id": "A3",
+          "title": "Code rouge et blanc",
+          "text": "Scannez le QR code dissimulé par l'animateur et recopiez le code qu'il révèle.",
+          "location": "QR code à placer",
+          "photo": "",
+          "mapsUrl": "",
+          "answer": "e17",
+          "hint": "Le dossier porte une lettre et deux chiffres."
+        },
+        {
+          "id": "A4",
+          "title": "Observation de rue",
+          "text": "Sur la rue indiquée, trouvez une enseigne ou une inscription précise. Notez exactement le mot demandé dans l'enveloppe.",
+          "location": "Rue de Copenhague à définir",
+          "photo": "",
+          "mapsUrl": "",
+          "answer": "",
+          "hint": "Ne traversez pas sans regarder et restez groupés."
+        },
+        {
+          "id": "A5",
+          "title": "L'heure de la transmission",
+          "text": "Reconstituez l'heure à partir des chiffres sur la photo-indice. Entrez l'heure au format HH:MM.",
+          "location": "Photo-indice à placer",
+          "photo": "",
+          "mapsUrl": "",
+          "answer": "16:20",
+          "hint": "L'heure est comprise entre 16 h et 17 h."
+        },
+        {
+          "id": "A6",
+          "title": "Message sous enveloppe",
+          "text": "Trouvez l'enveloppe numérotée par l'animateur. Lisez l'indice et répondez à la question inscrite à l'intérieur.",
+          "location": "Cachette autorisée à définir",
+          "photo": "",
+          "mapsUrl": "",
+          "answer": "",
+          "hint": "Cherchez uniquement dans les endroits autorisés."
+        },
+        {
+          "id": "A7",
+          "title": "Preuve photographique",
+          "text": "Reproduisez la pose visible sur la photo fournie et prenez une photo d'équipe. Montrez-la à l'animateur si nécessaire.",
+          "location": "Lieu à définir",
+          "photo": "",
+          "mapsUrl": "",
+          "answer": "",
+          "hint": "Tout le monde doit apparaître sur la photo."
+        },
+        {
+          "id": "A8",
+          "title": "Coordonnées du rendez-vous",
+          "text": "Utilisez les indices récoltés pour déterminer la zone du dernier signal. Gardez cette preuve pour le rassemblement final.",
+          "location": "À déterminer grâce aux indices",
+          "photo": "",
+          "mapsUrl": "",
+          "answer": "nord",
+          "hint": "Le mot désigne une direction cardinale."
+        }
+      ]
+    },
+    "bravo": {
+      "name": "POP BRAVO",
+      "intro": "Votre équipe doit retrouver des preuves complémentaires et vérifier les informations du dossier E-17.",
+      "missions": [
+        {
+          "id": "B1",
+          "title": "Transmission interceptée",
+          "text": "Cherchez le QR code placé par l'animateur et scannez-le pour découvrir le premier indice.",
+          "location": "QR code à placer",
+          "photo": "",
+          "mapsUrl": "",
+          "answer": "",
+          "hint": "Regardez les supports et panneaux autorisés autour de vous."
+        },
+        {
+          "id": "B2",
+          "title": "Le contact secret",
+          "text": "Lisez le message retrouvé et identifiez le prénom du contact de l'agent.",
+          "location": "Enveloppe à placer",
+          "photo": "",
+          "mapsUrl": "",
+          "answer": "freja",
+          "hint": "C'est un prénom danois."
+        },
+        {
+          "id": "B3",
+          "title": "La rue témoin",
+          "text": "Rendez-vous à la rue indiquée par l'animateur. Trouvez l'inscription photographiée et confirmez le mot manquant.",
+          "location": "Rue de Copenhague à définir",
+          "photo": "",
+          "mapsUrl": "",
+          "answer": "",
+          "hint": "Comparez les détails de la photo et le lieu réel."
+        },
+        {
+          "id": "B4",
+          "title": "Architecture sous surveillance",
+          "text": "Observez la façade indiquée. Comptez le nombre d'éléments demandés dans la consigne et entrez le résultat.",
+          "location": "Bâtiment à définir",
+          "photo": "",
+          "mapsUrl": "",
+          "answer": "",
+          "hint": "Comptez uniquement les éléments visibles depuis l'espace public."
+        },
+        {
+          "id": "B5",
+          "title": "Le dossier E-17",
+          "text": "Assemblez les fragments du dossier remis dans les missions précédentes. Quel est son identifiant ?",
+          "location": "Indice papier ou photo à placer",
+          "photo": "",
+          "mapsUrl": "",
+          "answer": "e17|e-17",
+          "hint": "La lettre est suivie de deux chiffres."
+        },
+        {
+          "id": "B6",
+          "title": "Photo du témoin",
+          "text": "Retrouvez le lieu représenté sur la photo et prenez une photo de votre équipe depuis un point de vue comparable.",
+          "location": "Photo à fournir",
+          "photo": "",
+          "mapsUrl": "",
+          "answer": "",
+          "hint": "Comparez les formes, les couleurs et les repères de la rue."
+        },
+        {
+          "id": "B7",
+          "title": "Confirmation horaire",
+          "text": "À partir de l'indice, confirmez l'heure à laquelle le dossier a été transmis.",
+          "location": "Enveloppe ou QR code à placer",
+          "photo": "",
+          "mapsUrl": "",
+          "answer": "16:20",
+          "hint": "Écrivez l'heure avec deux chiffres, deux-points, deux chiffres."
+        },
+        {
+          "id": "B8",
+          "title": "Dernier signal",
+          "text": "Quel secteur est mentionné par le dernier message ? Gardez la réponse pour la réunion des deux équipes.",
+          "location": "Dernier indice à placer",
+          "photo": "",
+          "mapsUrl": "",
+          "answer": "nord",
+          "hint": "Il s'agit d'une direction, pas d'un nom de personne."
+        }
+      ]
+    }
+  },
+  "final": {
+    "title": "Point de convergence",
+    "text": "Les deux équipes doivent réunir leurs indices pour révéler le lieu de rendez-vous final.",
+    "location": "À définir par l'animateur",
+    "photo": "",
+    "mapsUrl": ""
+  }
+}
