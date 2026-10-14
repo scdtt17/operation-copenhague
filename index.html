@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#C8102E">
+  <title>OPÉRATION COPENHAGUE</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="flag" aria-label="Drapeau danois"><span></span></div>
+    <div><div class="eyebrow">DOSSIER CLASSIFIÉ · POP</div><h1 id="siteTitle">OPÉRATION COPENHAGUE</h1></div>
+    <button id="adminOpen" class="button ghost">Administration</button>
+  </header>
+  <main>
+    <section id="homeView" class="panel hero">
+      <p class="eyebrow red">MISSION EN COURS DE PRÉPARATION</p>
+      <h2 id="homeHeading">Le Fantôme a disparu.</h2>
+      <p id="homeIntro">Agent, retrouvez les indices, recoupez les preuves et rejoignez le point final avant la fin du compte à rebours.</p>
+      <div class="notice"><strong>Règles de mission</strong><span>Deux équipes · Deux parcours · Un point de convergence</span></div>
+      <label for="teamSelect">Sélectionnez votre équipe</label>
+      <select id="teamSelect"><option value="alpha">POP ALPHA</option><option value="bravo">POP BRAVO</option></select>
+      <button id="joinBtn" class="button primary full">Démarrer la mission</button>
+      <p id="joinError" class="error" role="alert"></p>
+      <p class="small">Le compte à rebours démarre à la première connexion. Deux sessions de jeu peuvent être actives en même temps.</p>
+    </section>
+
+    <section id="playView" class="hidden">
+      <div class="statusbar panel">
+        <div><span class="eyebrow">ÉQUIPE</span><strong id="teamName">POP ALPHA</strong></div>
+        <div class="timer-wrap"><span class="eyebrow">TEMPS RESTANT</span><strong id="timer">60:00</strong></div>
+        <button id="leaveBtn" class="button ghost">Quitter</button>
+      </div>
+      <section class="panel">
+        <p class="eyebrow red" id="routeEyebrow">PARCOURS ALPHA</p>
+        <h2 id="routeTitle">Briefing de mission</h2>
+        <p id="routeIntro"></p>
+        <div id="missionList" class="mission-list"></div>
+      </section>
+      <section class="panel final-panel">
+        <p class="eyebrow">OBJECTIF COMMUN</p><h2 id="finalTitle">Point de convergence</h2><p id="finalText"></p>
+        <p><strong id="finalLocation"></strong></p>
+        <img id="finalPhoto" class="mission-photo hidden" alt="Photo du point final">
+        <a id="finalMap" class="button secondary hidden" target="_blank" rel="noopener">Ouvrir le lieu dans Google Maps ↗</a>
+      </section>
+    </section>
+
+    <section id="adminView" class="panel hidden">
+      <div class="admin-head"><div><p class="eyebrow red">ZONE RÉSERVÉE</p><h2>Panneau administrateur</h2></div><button id="adminClose" class="button ghost">Fermer</button></div>
+      <div id="adminLogin">
+        <p>Entrez le code d’accès pour modifier le jeu.</p>
+        <form id="loginForm"><label for="pinInput">Code administrateur</label><input id="pinInput" type="password" inputmode="numeric" maxlength="12" placeholder="Code d'accès" required><button class="button primary" type="submit">Déverrouiller</button></form>
+        <p id="loginError" class="error"></p>
+      </div>
+      <div id="adminTools" class="hidden">
+        <div class="admin-grid">
+          <label>Titre du jeu<input id="cfgTitle"></label>
+          <label>Durée (minutes)<input id="cfgDuration" type="number" min="1" max="240"></label>
+          <label>Texte d'introduction<textarea id="cfgIntro" rows="3"></textarea></label>
+          <label>Couleur principale<input id="cfgColor" type="color"></label>
+        </div>
+        <div class="admin-actions">
+          <button id="saveBtn" class="button primary">Enregistrer les modifications</button>
+          <button id="timerStart" class="button secondary">Démarrer / réinitialiser le chrono</button>
+          <button id="timerPause" class="button ghost">Pause</button>
+          <button id="timerResume" class="button ghost">Reprendre</button>
+          <button id="clearSessions" class="button danger">Libérer les sessions</button>
+        </div>
+        <p id="saveStatus" class="small"></p>
+        <hr>
+        <h3>Modifier les missions</h3>
+        <p class="small">Les modifications enregistrées sont partagées entre les appareils connectés. Pour les photos, collez une URL d’image accessible sur Internet. Vous pouvez aussi coller un lien Google Maps.</p>
+        <div id="missionEditors"></div>
+        <h3>Point final commun</h3>
+        <div class="editor-card">
+          <label>Titre<input id="finalCfgTitle"></label>
+          <label>Texte<textarea id="finalCfgText" rows="3"></textarea></label>
+          <label>Lieu<input id="finalCfgLocation"></label>
+          <label>URL de photo<input id="finalCfgPhoto" type="url" placeholder="https://..."></label>
+          <label>Lien Google Maps<input id="finalCfgMap" type="url" placeholder="https://maps.google.com/..."></label>
+        </div>
+        <h3>QR codes des missions</h3>
+        <p class="small">Générez un QR code contenant le texte ou le lien que vous souhaitez faire scanner. Imprimez-le et placez-le sur le terrain.</p>
+        <div class="qr-controls"><input id="qrText" placeholder="Texte ou URL à encoder"><button id="makeQr" class="button secondary">Créer le QR code</button></div>
+        <div id="qrResult"></div>
+        <button id="adminLogout" class="button ghost">Verrouiller l'administration</button>
+      </div>
+    </section>
+  </main>
+  <footer><span>OPÉRATION COPENHAGUE</span><span>POP · MISSION CONFIDENTIELLE</span></footer>
+  <script src="/app.js"></script>
+</body></html>
